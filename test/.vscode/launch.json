@@ -1,0 +1,40 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        { // https://eis-testtool.northeurope.cloudapp.azure.com/bc
+        "type": "al",
+        "request": "launch",
+        "name": "eis-testtool",
+        "server": "https://eis-testtool.northeurope.cloudapp.azure.com",
+        "serverInstance": "BC",
+        "tenant": "default",
+        "authentication": "UserPassword",
+        // "schemaUpdateMode": "ForceSync", // BE CAREFUL using this option.
+        "startupObjectType": "Page",
+        "startupObjectId": 130401, // Test Tool
+        "startupCompany": "***TestTool",
+        "breakOnError": true,
+        "launchBrowser": true
+    }
+    ,
+    { // https://havn-node-02.westeurope.cloudapp.azure.com/LPGAppTest/?tenant=default
+        "name": "eis-testtool (ContainerHavn, LPGAppTest)",
+        "request": "launch",
+        "type": "al",
+        "environmentType": "OnPrem",
+        "server": "https://havn-node-02.westeurope.cloudapp.azure.com",
+        "serverInstance": "LPGAppTestdev",
+        "port": 443,
+        "authentication": "UserPassword",
+        "startupObjectType": "Page",
+        "startupObjectId": 130401, // Test Tool
+        "startupCompany": "***TestTool",
+        "schemaUpdateMode": "Synchronize",
+        "breakOnError": true,
+        "launchBrowser": true,
+        "enableLongRunningSqlStatements": true,
+        "enableSqlInformationDebugger": true,
+        "tenant": "default"
+    }
+    ]
+}

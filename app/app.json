@@ -1,0 +1,46 @@
+{
+  "id": "!!! Put a newly generated guid here",
+  "name": "!!! Put the name of your app here",
+  "publisher": "Evidi Core AS",
+  "version": "1.0.0.0",
+  "brief": "!!! Put the brief of your app here",
+  "description": "!!! Put the description of your app here",
+  "privacyStatement": "https://www.evidi.com/eis/privacy-policy",
+  "EULA": "https://www.evidi.com/eis/end-user-license-agreement-eula-for-evidi-core-apps",
+  "help": "https://www.evidi.com/support",
+  "url": "https://www.evidi.com",
+  "contextSensitiveHelpUrl": "https://www.evidi.com/support", 
+  "logo": "./Src/_Resources/Logo.png",
+  "screenshots": [],
+  "application": "26.0.0.0",
+  "platform": "26.0.0.0",
+  "dependencies": [     
+    {
+      "id": "7589a1ff-f47c-4675-84d4-e0848929dc44",
+      "name": "Evidi Platform",
+      "publisher": "Skill Core AS",
+      "version": "26.0.0.0"
+    },
+    {
+      "id": "e74b44c1-c9b7-46c5-97ea-174d0a528e47", 
+      "name": "Evidi Protools", 
+      "publisher": "Skill Core AS", 
+      "version": "26.0.0.0"
+    }
+  ],
+  "idRanges": [
+    {
+      "from": 55000,
+      "to": 55200
+    }
+  ],
+  "resourceExposurePolicy" : {
+    "allowDebugging": true, 
+    "allowDownloadingSource": false, 
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "15.0",
+  "target": "Cloud",
+  "features": ["TranslationFile"],
+  "supportedLocales": ["en-US","nb-NO"]
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://raw.githubusercontent.com/microsoft/AL-Go-Actions/v8.0/.Modules/settings.schema.json",
+  "type": "PTE",
+  "templateUrl": "https://github.com/microsoft/AL-Go-PTE@main",
+  "CICDPullRequestBranches": [
+    "main"
+  ],
+  "ConditionalSettings": [
+    {
+      "workflows": [
+        "Update AL-Go System Files"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 1 * *"
+        },
+        "commitOptions": {
+          "createPullRequest": false
+        }
+      }
+    },
+    {
+      "workflows": [
+        "Test Next Major"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 15 * *"
+        }
+      }
+    },
+    {
+      "workflows": [
+        "Test Next Minor"
+      ],
+      "settings": {
+        "workflowSchedule": {
+          "cron": "0 2 * * 1"
+        }
+      }
+    }
+  ]
+}

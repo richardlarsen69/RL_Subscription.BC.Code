@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        { // https://businesscentral.dynamics.com/!!!-Tenant-Guid-Goes-Here/!!!-Sandbox-Name-Here"
+            "type": "al",
+            "request": "launch",
+            "name": "Saas configuration",
+            "tenant": "!!! Tenant Guid Goes Here",
+            // "schemaUpdateMode":  "ForceSync", // BE CAREFUL when using this option.
+            // "startupObjectType": "Page",
+            // "startupObjectId": 21,
+            "breakOnError": true,
+            "launchBrowser": true,
+            "environmentType": "Sandbox",
+            "environmentName": "!!!-Sandbox-Name-Here"
+        },
+    ]
+}

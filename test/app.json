@@ -1,0 +1,54 @@
+{
+  "id": "!!! Put a newly generated guid here",
+  "name": "!!! Put the name of your test app here",
+  "publisher": "Evidi Core AS",
+  "version": "1.0.0.0",
+  "description": "!!! Put the description of your test app here",
+  "brief": "!!! Put the brief of your test app here",
+  "privacyStatement": "https://www.evidi.com/eis/privacy-policy",
+  "EULA": "https://www.evidi.com/eis/end-user-license-agreement-eula-for-evidi-core-apps",
+  "help": "https://www.evidi.com/support",
+  "url": "https://www.evidi.com",
+  "contextSensitiveHelpUrl": "https://www.evidi.com/support", 
+  "applicationInsightsConnectionString": "",
+  "logo": "./Src/_Resources/Logo.png",
+  "screenshots": [],
+  "platform": "26.0.0.0",
+  "application": "26.0.0.0",
+  "dependencies": [ 
+    { 
+      "id": "5d86850b-0d76-4eca-bd7b-951ad998e997", 
+      "name": "Tests-TestLibraries", 
+      "publisher": "Microsoft", 
+      "version": "26.0.0.0"
+    },
+    {
+      "id": "7589a1ff-f47c-4675-84d4-e0848929dc44",
+      "name": "Evidi Platform",
+      "publisher": "Skill Core AS",
+      "version": "26.0.0.0"
+    },
+    {
+      "id": "e74b44c1-c9b7-46c5-97ea-174d0a528e47", 
+      "name": "Evidi Protools", 
+      "publisher": "Skill Core AS", 
+      "version": "26.0.0.0"
+    },
+    {
+      "id": "!!! Put your app guid here", 
+      "name": "!!! Put your app name here",
+      "publisher": "Evidi Core AS",
+      "version": "1.0.0.0"
+    }
+  ],
+  "idRanges": [
+    {"from": 97400, "to": 97499}
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true, 
+    "allowDownloadingSource": true, 
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "15.0",
+  "target": "Cloud"
+}
