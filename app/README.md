@@ -2,7 +2,7 @@
 
 ## In GitHub
 
-- Create template from template app https://github.com/Evidi-Optimise/App_Template_PTE, press use this template button.
+- Create template from template app https://github.com/Evidi-Optimise/SUB_Template_PTE, press use this template button.
 
 ## After creating a new repo
 

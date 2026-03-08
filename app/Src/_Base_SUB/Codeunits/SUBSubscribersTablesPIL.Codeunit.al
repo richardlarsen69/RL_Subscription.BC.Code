@@ -1,6 +1,6 @@
-codeunit 55003 "APP_SubscribersPages_PIL"
+codeunit 61003 "SUB_SubscribersTables_PIL"
 {
-    // Place event subscribers for pages in this codeunit.
+    // Place event subscribers for tables in this codeunit.
     // Recommendations:
     // - Group events for objects, functional areas etc. using regions.
     // - Use one-line event procedures if possible, calling additional code in other objects.

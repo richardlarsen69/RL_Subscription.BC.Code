@@ -1,8 +1,8 @@
-codeunit 55001 "APP_Upgrade_PIL"
+codeunit 61005 "SUB_Upgrade_PIL"
 {
     Subtype = Upgrade;
     Access = Internal;
-    
+
     trigger OnUpgradePerCompany();
     begin
     end;

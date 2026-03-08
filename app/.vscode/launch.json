@@ -4,15 +4,15 @@
         { // https://businesscentral.dynamics.com/!!!-Tenant-Guid-Goes-Here/!!!-Sandbox-Name-Here"
             "type": "al",
             "request": "launch",
-            "name": "Saas configuration",
-            "tenant": "!!! Tenant Guid Goes Here",
+            "name": "Nevion-Livecopy_20251210",
+            "tenant": "61958e57-ff19-4573-9056-e5dfd57c9378",
             // "schemaUpdateMode":  "ForceSync", // BE CAREFUL when using this option.
             // "startupObjectType": "Page",
             // "startupObjectId": 21,
             "breakOnError": true,
             "launchBrowser": true,
             "environmentType": "Sandbox",
-            "environmentName": "!!!-Sandbox-Name-Here"
+            "environmentName": "Livecopy_20251210"
         },
     ]
 }

@@ -1,8 +1,8 @@
-codeunit 55000 "APP_Install_PIL"
+codeunit 61004 "SUB_Install_PIL"
 {
     Subtype = Install;
     Access = Internal;
-    
+
     trigger OnInstallAppPerCompany();
     var
         Module: ModuleInfo;
