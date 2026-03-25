@@ -15,27 +15,9 @@ codeunit 61000 "SUB_SubscribersCodeunits_PIL"
     [EventSubscriber(ObjectType::Codeunit, Codeunit::"Create Billing Documents", 'OnBeforeTestPreviousDocumentTotalInvoiceAmount', '', true, true)]
     local procedure CreateBillingDoc_OnBeforeTestPreviousDocumentTotalInvoiceAmount(SalesHeader: Record "Sales Header")
     var
-        SalesLine: Record "Sales Line";
-        NewLine: Record "Sales Line";
-        Amount: Decimal;
-        LineNo: Integer;
+        SubscriptionMngmnt: Codeunit SUB_SubscriptionMngmnt_PIL;
+
     begin
-        SalesLine.SetRange("Document Type", SalesHeader."Document Type");
-        SalesLine.SetRange("Document No.", SalesHeader."No.");
-        if SalesLine.FindSet() then
-            repeat
-                Amount += SalesLine."Line Amount";
-                if SalesLine.Amount <> 0 then
-                    NewLine := SalesLine;
-                LineNo := SalesLine."Line No.";
-            until SalesLine.Next() = 0;
-        If NewLine.Amount <> 0 then begin
-            NewLine."Line No." := LineNo + 10000;
-            NewLine.Type := NewLine.type::"G/L Account";
-            NewLine."No." := '1502';
-            NewLine.validate(Quantity, -1);
-            NewLine.validate("Unit Price", Amount);
-            NewLine.Insert();
-        end;
+        SubscriptionMngmnt.CheckToOffsetSubscription(SalesHeader);
     end;
 }
